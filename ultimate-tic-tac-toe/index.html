@@ -10,16 +10,15 @@
     <script src="Build/UltTicTacToeWebBuild.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/UltTicTacToeWebBuild.data",
-        frameworkUrl: "Build/UltTicTacToeWebBuild.framework.js",
-        codeUrl: "Build/UltTicTacToeWebBuild.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Ultimate_Tic_Tac_Toe",
-        productName: "Ultimate_Tic_Tac_Toe_Client",
-        productVersion: "0.0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
+  dataUrl: "Build/UltTicTacToeWebBuild.data",
+  frameworkUrl: "Build/UltTicTacToeWebBuild.framework.js",
+  codeUrl: "Build/UltTicTacToeWebBuild.wasm",
+  streamingAssetsUrl: "StreamingAssets",
+  companyName: "Ultimate_Tic_Tac_Toe",
+  productName: "Ultimate_Tic_Tac_Toe_Client",
+  productVersion: "0.0.1",
+  matchWebGLToCanvasSize: true, // Sync WebGL render size with the canvas size.
+});
     </script>
   </body>
 </html>
